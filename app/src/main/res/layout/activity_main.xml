@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+<LinearLayout
+    android:id="@+id/playBackButtons"
+    android:visibility="invisible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:gravity="end"
+        android:id="@+id/currentPosition" >
+
+    </TextView>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:id="@+id/pausebutton"
+        android:background="@drawable/aa">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/songDuration"
+        android:layout_width="0dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </TextView>
+
+</LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
